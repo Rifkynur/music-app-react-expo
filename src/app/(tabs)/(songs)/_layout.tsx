@@ -3,6 +3,8 @@ import { defaultStyle } from '@/styles'
 import { Stack } from 'expo-router'
 import { colors } from '@/app/constants/tokens'
 import { StackScreenWithSearchBar } from '@/app/constants/layout'
+import { SafeAreaView } from 'react-native'
+import { StatusBar } from 'expo-status-bar'
 
 const SongsScreeenLayout = () => {
 	return (
@@ -13,6 +15,9 @@ const SongsScreeenLayout = () => {
 					options={{
 						...StackScreenWithSearchBar,
 						headerTitle: 'Songs',
+						headerSearchBarOptions: {
+							placeholder: 'bisaa',
+						},
 					}}
 				/>
 			</Stack>

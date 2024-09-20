@@ -16,7 +16,7 @@ const TrackListItem = ({ track }: TrackItemProps) => {
 	return (
 		<TouchableHighlight>
 			<View style={styles.trackItemContainer}>
-				<View>
+				<View style={{ marginTop: 5 }}>
 					<FastImage
 						source={{
 							uri: track?.image ?? unknownTrackImageUrl,
@@ -29,7 +29,7 @@ const TrackListItem = ({ track }: TrackItemProps) => {
 					/>
 				</View>
 				{/* tack artist and title */}
-				<View style={{ width: '100%' }}>
+				<View style={{ width: '100%', justifyContent: 'center' }}>
 					<Text
 						numberOfLines={1}
 						style={{
@@ -58,6 +58,7 @@ const styles = StyleSheet.create({
 		columnGap: 14,
 		alignItems: 'center',
 		paddingRight: 20,
+		paddingLeft: 15,
 	},
 	trackArtworkImage: {
 		borderRadius: 8,

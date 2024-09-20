@@ -15,25 +15,25 @@ const TabsNavigation = () => {
 				},
 				headerShown: false,
 				tabBarStyle: {
-					position: 'absolute',
+					// position: 'absolute',
 					paddingTop: 8,
 					borderTopWidth: 0,
-					borderTopLeftRadius: 20,
-					borderTopRightRadius: 20,
+					// borderTopLeftRadius: 20,
+					// borderTopRightRadius: 20,
+					backgroundColor: '#1f1f1f',
 				},
-				tabBarBackground() {
-					return (
-						<BlurView
-							intensity={95}
-							style={{
-								...StyleSheet.absoluteFillObject,
-								overflow: 'hidden',
-								borderTopLeftRadius: 20,
-								borderTopRightRadius: 20,
-							}}
-						/>
-					)
-				},
+				// tabBarBackground() {
+				// 	return (
+				// 		<BlurView
+				// 			intensity={100}
+				// 			style={{
+				// 				...StyleSheet.absoluteFillObject,
+				// 				overflow: 'hidden',
+				// 				backgroundColor: 'black',
+				// 			}}
+				// 		/>
+				// 	)
+				// },
 			}}
 		>
 			<Tabs.Screen
